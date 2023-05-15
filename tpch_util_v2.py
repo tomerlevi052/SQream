@@ -133,7 +133,8 @@ def load_data_to_base():
         sys.exit(f"{Fore.RED}Error in loading data: {exception_object}{Style.RESET_ALL}")
 
 #######################################################################################################################
-
+# TODO: Think about adding the possebility to choose from all queries (not just 5 and 7) and in a group of more than 2 queries per-benchmarking run.
+# TODO: Think about getting a number of time the queries will run and then get an "average executing time" and store it also in the resuls table.
 
 def run_performance_benchmarking():
 
@@ -306,6 +307,8 @@ def export_results_to_csv():
     # end of the exception block
     except psycopg2.OperationalError as exception_object:
         sys.exit(f"{Fore.RED}Error exporting results to file: {exception_object}{Style.RESET_ALL}")
+
+#######################################################################################################################
 
 
 def clean_results_table():
