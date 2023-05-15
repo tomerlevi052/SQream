@@ -277,7 +277,7 @@ def fetch_results():
         sys.exit(f"{Fore.RED}Error in fetching results table: {exception_object}{Style.RESET_ALL}")
 
 #######################################################################################################################
-# TODO: We need to export all of the rows of the result_table
+# TODO: We need to export all of the rows of the result_table.
 # TODO: Think about adding a parameter/ argument for the function signature to be able to get a file name.
 
 def export_results_to_csv():
